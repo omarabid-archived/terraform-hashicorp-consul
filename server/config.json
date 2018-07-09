@@ -1,0 +1,28 @@
+{
+	"client_addr": "0.0.0.0",
+	"bind_addr": "{bind_addr}", 
+	"advertise_addr": "{bind_addr}",
+	"datacenter": "dc1",
+	"data_dir": "/var/consul",
+	"encrypt": "EXz7LFN8hpQ4id8EDYiFoQ==",
+	"log_level": "INFO",
+	"enable_syslog": true,
+	"enable_debug": true,
+	"node_name": "${node_name}",
+	"server": true,
+	"bootstrap_expect": 1,
+	"leave_on_terminate": false,
+	"skip_leave_on_interrupt": true,
+	"rejoin_after_leave": true,
+	"ports": {
+		"dns": 53
+	},
+	"recursors": [
+		"8.8.8.8"
+	],
+	"retry_join": [ 
+		"server1.${server_domain}:8301",
+		"server2.${server_domain}:8301"
+	]
+}
+
