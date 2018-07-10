@@ -10,7 +10,7 @@ data "template_file" "server_config" {
 	template = "${file("${path.module}/server/config.json")}"
 
 	vars {
-		node_name = "consul-central-${count.index + 1}"
+		node_name = "consul-${var.server_domain}-${count.index + 1}"
 		server_domain = "${var.server_domain}"
 	}
 }
