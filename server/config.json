@@ -2,7 +2,7 @@
 	"client_addr": "0.0.0.0",
 	"bind_addr": "{bind_addr}", 
 	"advertise_addr": "{bind_addr}",
-	"datacenter": "dc1",
+	"datacenter": "lon1",
 	"data_dir": "/var/consul",
 	"encrypt": "EXz7LFN8hpQ4id8EDYiFoQ==",
 	"log_level": "INFO",
@@ -25,4 +25,3 @@
 		"server2.${server_domain}:8301"
 	]
 }
-
